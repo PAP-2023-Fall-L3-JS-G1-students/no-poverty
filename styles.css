@@ -1,0 +1,110 @@
+li {
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+}
+
+
+p, h2 {
+
+    display: inline-block;
+    padding: 10px;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    font-size: 17px
+}
+
+p {
+    width: 400px;
+    height: 200px
+}
+
+#logo {
+    width: 200px;
+    height: 200px;
+}
+
+#title {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+#subtitle {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+#about-us-title {
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+}
+#about-us-subtitle {
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+}
+
+
+
+
+.title-page {
+    width: 1200px;
+    height: 100px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+
+}
+.video-background {
+    width: 1200px;
+    height: 500px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.members {
+    width: 1200px;
+    height: 300px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-content: normal;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    
+}
+
+.join-convo {
+    width: 1200px;
+    height: 50px;
+    margin: auto;
+}
+#about-sect {
+    width: 1200px;
+    height: 50px;
+    margin: auto;
+    font-size: 20px;
+}
