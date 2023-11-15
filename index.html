@@ -13,38 +13,43 @@
 </head>
 <body>
     <h1> Call to Action Questionnaire </h1>
-    
+
     <h2> What is Your Time Commitment per Week? </h2>
 
     <!-- Time commitment section -->
     <form class="call-to-action" id="questionnare">
         <!-- Time Commitment Section-->
         <label>
-            <input onclick="option1()" type="radio" name="time" id="lessThanOne"> Less than 1 Hour
+            <input onclick="option1()" type="radio" class="time" id="lessThanOne"> Less than 1 Hour
         </label>
 
         <br/>
 
         <label>
-            <input onclick="option2()" type="radio" name="time" id="one-three"> 1 - 3 Hours
+            <input onclick="option2()" type="radio" class="time" id="one-three"> 1 - 3 Hours
         </label>
 
         <br/>
 
         <label>
-            <input onclick="option3()" type="radio" name="time" id="three-five"> 3 - 5 Hours
+            <input onclick="option3()" type="radio" class="time" id="three-five"> 3 - 5 Hours
         </label>
 
         <br/>
 
         <label>
-            <input onclick="option4()" type="radio" name="time" id="five-ten"> 5 - 10 Hours
+            <input onclick="option4()" type="radio" class="time" id="five-ten"> 5 - 10 Hours
         </label>
+
+        <br/>
+        
+        <button id="refreshButton"> Refresh </button>
 
         <br/>
 
 
         <h2> Call to Action Results </h2>
+        <br/>
 
         <div class="option1 option">
 
@@ -70,6 +75,8 @@
         
         </div>
 
+        <br/>
+
         <!-- 1 - 3 Hour result -->
 
         <div class="option2 option">
@@ -78,7 +85,7 @@
             <h3> Here are Some Examples of Social Media Fighting Global Poverty </h3> 
 
             <a href="https://joshuasheart.org/about-us/"> Joshua's Heart Foundation </a> 
-            <p> Josua's Heart Foundation (JHF) is an organization using social media to fight against global hunger and poverty in the youth. By reaching out to his community, he raised more than $1 million toward ending hunger globally. </p>
+            <p> Joshua's Heart Foundation (JHF) is an organization using social media to fight against global hunger and poverty in the youth. By reaching out to his community, he raised more than $1 million toward ending hunger globally. </p>
             
             <a href="https://www.globalcitizen.org/en/about/who-we-are/"> Global Citizen Organization </a>
             <p> Global Citizen is an action platform dedicated to abolishing extreme poverty. They post, tweet, message, vote, sign, and call to influence leaders and citizens to act. The collective actions in our community can make a difference to end extreme poverty now. They cultivated $48.4 billion commitment to aid the world's poor. </p>
@@ -88,6 +95,8 @@
         
         </div>
 
+        <br/>
+        <!-- 3-5 hour result -->
         <div class="option3 option">
 
             <h2> Educate Yourself </h2>
@@ -103,6 +112,8 @@
             <p> Listen to The Poverty Podcast and join poverty specialists in the conversation as they explore the latest data and research on poverty reduction, shared prosperity, and equity around the globe. </p>
         </div>
 
+        <br/>
+        <!-- 5-10 hour result -->
         <div class="option4 option">
             <h2> Volunteer </h2>
             <h3> Get involved by volunteering for Nonprofit Organizations </h3>
@@ -118,9 +129,10 @@
             <a href="https://momsagainstpoverty.org/volunteer/"> Moms Against Poverty </a>
             <p> Moms Against Poverty volunteers fundraise, plan events, package for their Hunger Relief Program. They also have a student volunteer form for high school and college students to participate. </p>
         </div>
-
+        <br/>
     </form>
 
+    <br/>
     <div id="result"></div>
 
     <script> 
@@ -144,10 +156,8 @@
         document.querySelector('.option4').style.display = "block";
     }
 
-    
-
-
     </script>
+
     <script src ="call-to-action.js"></script>
 </body>
 </html>

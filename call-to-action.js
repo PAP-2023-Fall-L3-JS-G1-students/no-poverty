@@ -10,3 +10,12 @@ function generate(event) {
     console.log(lessThanOne, oneToThree, threeToFive, fiveToTen, moreThanTen);
 }
 
+document.addEventListener('DOMContentLoaded', function () {
+    var refreshButton = this.documentElement('refreshButton');
+
+    refreshButton.addEventListener('click', function () {
+        location.reload();
+
+    });
+
+});

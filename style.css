@@ -1,0 +1,25 @@
+h1 {
+    font-size: 30px;
+    color: #C4006F;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#C4006F;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F1E9DA;
+}
+
+div {
+    font-size: 20px;
+    color: #2E294E;
+    width: auto;
+    margin: 0 auto;
+}
+
+
