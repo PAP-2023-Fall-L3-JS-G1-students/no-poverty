@@ -1,8 +1,30 @@
+body {
+    margin: 0;
+}
+
+nav{
+    display: block;
+}
+
+#logo {
+    margin: 0;
+    font-size: 30px;
+    height: 40px;
+    width: auto;
+    display: inline-block;
+}
+
+ul {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: 5px;
+}
+
 li {
+    display: inline-block;
     border-color: black;
     border-width: 1px;
     border-style: solid;
-    display: inline-block;
     padding: 10px;
     margin: 5px;
 }
@@ -25,22 +47,39 @@ p {
     height: 200px
 }
 
-#logo {
-    width: 200px;
-    height: 200px;
+#home {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+}
+
+#home-vid {
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.title-page {
+    color: #F1E9DA;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #title {
-    display: flex;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    font-size: 100px;
 }
+
 #subtitle {
-    display: flex;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    font-weight: 200;
+    font-size: 50px;
 }
 #about-us-title {
     border-color: black;
@@ -60,29 +99,6 @@ p {
 }
 
 
-
-
-.title-page {
-    width: 1200px;
-    height: 100px;
-    display: flex;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-
-}
-.video-background {
-    width: 1200px;
-    height: 500px;
-    display: flex;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-    border-color: black;
-    border-width: 1px;
-    border-style: solid;
-}
 
 .members {
     width: 1200px;
