@@ -1,68 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css">
     <title>No Poverty</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- fonts import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300;1,400&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <header>
     
     <nav>
-        <h3 id="logo">Change for Change</h3>
-            <ul id="nav-bar-items">
-                <li>About us</li>
-                <li>Learn</li>
-                <li>Act Now</li>
+        <h1 id="logo">Change For Change</h1>
+        <div id="nav-bar-items">
+            <ul>
+                <li><a href="#about" class="highlight">About Us</a></li>
+                <li><a href="#info" class="highlight">Learn More</a></li>
+                <li><a href="#questionnaire" class="highlight">Act Now</a></li>
             </ul>
+        </div>
     </nav>
 </header>
 
 <body>
     <main>
+        <a id="to-top" href="#">Home</a>
+
         <section id="home">
             <video autoplay muted loop id="home-vid">
                 <source src="asset/eyes.mp4" type="video/mp4">
             </video>
             <div class="title-page">
                 <div>
-                    <h1 id="title">Title</h1>
-                    <h3 id="subtitle">Subtitle</h3>
+                    <h1 id="title">END POVERTY</h1>
+                    <p id="subtitle">You Can Make An Impact</p>
                 </div>
             </div>
         </section>
 
-        <section id="about-sect">
+        <section id="about">
             <div class="about-us-title">
-                <h1 id="about">Why does it matter to us?</h1>
+                <h1>Why Does It Matter to Us?</h1>
             </div>
 
             <div class="members" id="cindy">
-                <h2>Cindy</h2>
+                <h2>Cindy:</h2>
                 <p>I find this goal to be important because it highlights the importance of basic human needs for everyone and how often we live in our own bubble where we do not recognize the privilege and we take advantage of accessibility to clean water access, shelter, and food. Some of these resources are not being allocated to everyone based on their environment and circumstances. Acknowledging our privilege and educating ourselves on what no poverty looks like, we can advocate for others who are in need of aid and push for basic human rights to all, and not those who can afford it. </p>
             </div>
             <div class="members" id="regina">
-                <h2>Regina</h2>
-                <p>Test</p>
+                <h2>Regina:</h2>
+                <p>Addressing poverty is personal to me because my family have fought poverty for generations. Although humanity's the overall life qualities have increase in recent decades, there are still many struggling in developing countries.</p>
             </div>
             <div class="members" id="Tanya">
-                <h2>Tanya</h2>
+                <h2>Tanya:</h2>
                 <p>I find this goal to be important because it affects the economic status of each country it affects, as well as their overall GDP and financial well being. This can affect their infrastructure and flow of imports and exports, resulting in a cycle of poverty that is difficult to break. </p>
             </div>
             <div class="members" id="Ben">
-                <h2>Ben</h2>
-                    <p>I find it vital in eradicating poverty as each nation/community/family deserves adequate resources towards supporting their basic needs such as food, healthcare, education, etc. and it’s unfair how disproportionately such resources are scattered globally </p>
-            </div>
-            <div class="join-convo">
-                <h1>Join the conversation</h1>
+                <h2>Ben:</h2>
+                    <p>I find it vital in eradicating poverty as each nation/community/family deserves adequate resources towards supporting their basic needs such as food, healthcare, education, etc. and it’s unfair how disproportionately such resources are scattered globally. </p>
             </div>
         </section>
-        <section></section>
-        <section></section>
-    </main>
+
+        <section id="info">
+            <div class="content">
+                <h1 class="content-header">Where does the goal become needed?</h1>
+                <h3>This goal has become a necessity in many places: </h3>
+                <p>Sub-Saharan Africa (534 million) and South Asia (389 million) are home to approximately five out of every six poor people.</p>
+            </div>
+                
+            <div class="content">
+                <h1 class="content-header">When does the goal become needed?</h1>
+                <h3>This goal has become prevalent in many instances in modern society: </h3>
+                <p>In 2020, the number of people living in extreme poverty shot up to 724 million, 700% higher than the pre-pandemic projection</p>
+            </div>
+
+            <div class="content">
+                <h1 class="content-header">How does the goal become needed?</h1>
+                <h3>This goal becomes needed in many ways. This is evident through the data we have collected below: </h3>
+                <p>According to the 2023 data release, 1.1 billion out of 6.1 billion people (just over 18%) live in acute multidimensional poverty across 110 countries. </p>
+                <p>Children under 18 years old account for half of MPI-poor people (566 million). The poverty rate among children is 27.7%, while among adults it is 13.4%.</p>
+                <p>Only 8.5% of children, 7.9% of vulnerable people and 23.2% of old people receive social protection cash benefits in low-income countries according to UN’s 2023 Sustainable Development Report.</p>
+            </div>
+        </section>
+        <section id="questionnaire">
+            <h1 class="content-header">Find Out How You Can Help</h1>
+            <h2> How Much Time Can You Commit To Help Each Week? </h2>
+
+        <!-- Time commitment section -->
+        <form class="call-to-action" id="questionnare">
+            <!-- Time Commitment Section-->
+            <label>
+                <input type="radio" onclick="showResult()" class="time" id="lessThanOne" name="time"> Less than 1 Hour
+            </label>
+
+            <label>
+                <input type="radio" onclick="showResult()" class="time" id="one-three" name="time"> 1 - 3 Hours
+            </label>
+
+            <label>
+                <input type="radio" onclick="showResult()" class="time" id="three-five" name="time"> 3 - 5 Hours
+            </label>
+
+            <label>
+                <input type="radio" onclick="showResult()" class="time" id="five-ten" name="time"> 5 - 10 Hours
+            </label>
+
+            <input type="reset" id="reset" onclick="erase()">
+
+            <h1 class="option">Here's Some Ideas:</h1>
+
+            <div class="option" id="option1">
+
+            <!-- Less than 1 Hour Result --> 
+            
+                <h2> Donate </h2>
+                <h3> Donate to Organizations Combatting Poverty</h3>
+
+                <a href="https://www.care.org/" class="highlight"> CARE Organization </a>    
+                <p> Care's Mission is to Defeat Poverty, Achieve Social Justice, and Advocates for Women and Girl's Rights Globally </p>
+
+                <a href="https://www.oxfamamerica.org/donate/" class="highlight"> Oxfam Organization</a>
+                <p> Oxfam is a Global Organization that Fights Inequality to End Poverty and Injustice </p>
+
+                <a href="https://borgenproject.org/donate/" class="highlight"> The Borgen Project </a>
+                <p> The Borgen Project is a Nonprofit Organization that is Addressing Poverty and Hunger</p>
+            
+            
+            </div>
+
+            <br/>
+
+            <!-- 1 - 3 Hour result -->
+
+            <div class="option" id="option2">
+
+                <h2> Spread Awareness through Social Media </h2>
+                <h3> Here are Some Examples of Social Media Fighting Global Poverty </h3> 
+
+                <a href="https://joshuasheart.org/about-us/" class="highlight"> Joshua's Heart Foundation </a> 
+                <p> Joshua's Heart Foundation (JHF) is an organization using social media to fight against global hunger and poverty in the youth. By reaching out to his community, he raised more than $1 million toward ending hunger globally. </p>
+                
+                <a href="https://www.globalcitizen.org/en/about/who-we-are/" class="highlight"> Global Citizen Organization </a>
+                <p> Global Citizen is an action platform dedicated to abolishing extreme poverty. They post, tweet, message, vote, sign, and call to influence leaders and citizens to act. The collective actions in our community can make a difference to end extreme poverty now. They cultivated $48.4 billion commitment to aid the world's poor. </p>
+
+                <a href="https://wersm.com/meal-for-share-instagram-against-poverty/" class="highlight"> #Meal For Share </a>
+                <p> ABACO is a Columbian Food Bank Association, diverted into a strong campaign that launched a hashtag called #MealForShare to raise awareness about extreme poverty in Columbia.</p>
+            
+            </div>
+
+            <br/>
+            <!-- 3-5 hour result -->
+            <div class="option" id="option3">
+
+                <h2> Educate Yourself </h2>
+                <h3> Learn more about poverty </h3>
+
+                <a href="https://www.ted.com/talks/rutger_bregman_poverty_isn_t_a_lack_of_character_it_s_a_lack_of_cash?autoplay=true&muted=true&language=en" class="highlight"> Poverty isn't a lack of character; it's a lack of cash | Ted Talk by Rutger Bregman </a>
+                <p> Watch Rutger Bregman's Ted Talk as he advocates for a guranteed basic income as a proactive solution to end poverty </p>
+
+                <a href="https://www.worldvision.org/sponsorship-news-stories/global-poverty-facts" class="highlight"> Global Poverty: Facts, FAQs, and How to Help </a>
+                <p> Read World Vision to learn more about global poverty and solutions </p>
+
+                <a href="https://www.worldbank.org/en/news/series/the-poverty-podcast" class="highlight"> The Poverty Project Podcast</a>
+                <p> Listen to The Poverty Podcast and join poverty specialists in the conversation as they explore the latest data and research on poverty reduction, shared prosperity, and equity around the globe. </p>
+            </div>
+
+            <br/>
+            <!-- 5-10 hour result -->
+            <div class="option" id="option4">
+                <h2> Volunteer </h2>
+                <h3> Get involved by volunteering for Nonprofit Organizations </h3>
+
+                <a href="https://www.linkedin.com/jobs/view/volunteer-build-community-fight-poverty-become-an-opc-tacoma-wa-at-volunteermatch-3755963994?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic" class="highlight"> VolunteerMatch </a>
+                
+                <p> Apply to become a volunteer that builds community and fights poverty </p>
+                <p> "I saw RESULTS on VolunteerMatch, but I wasn’t sure what advocacy was. Before that, I wasn’t really aware of the way different government policies impacted me. But RESULTS gave me a whole new perspective. I learned that if you want change, first you need to see what members of Congress are doing and build connections." - Yaseer Khanani</p>
+
+                <a href="https://the-borgen-project.breezy.hr/p/c09da9e67c03-nonprofit-leadership-internship?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic" class="highlight" > The Borgen Project Nonprofit Leadership Internship </a>
+                <p> The Borgen Project is an innovative, national campaign that is working to make poverty a focus of U.S. and U.K. foreign policy. This is a part-time 12-hours per week, unpaid telecommuting internship. The internship is for 12 weeks, however, if your availability is limited, you can work ahead and complete the program in fewer weeks. The role and will give an insight into the key skills required to lead and develop a nonprofit organization.</p>
+
+                <a href="https://momsagainstpoverty.org/volunteer/" class="highlight"> Moms Against Poverty </a>
+                <p> Moms Against Poverty volunteers fundraise, plan events, package for their Hunger Relief Program. They also have a student volunteer form for high school and college students to participate. </p>
+            </div>
+            <br/>
+        </form>
+
+        <br/>
+        <div id="result"></div>
+        <script src ="call-to-action.js"></script>
+    </section>
+</main>
 </body>
 
 <footer>
-
+    <p>Computing For All 2023 Fall Quarter | Level 3 JavaScript | Instructor: Quincy P., Jonathan C.</p>
+    <p>Presented by Cindy N., Ben M., Tanya J., and Regina L. </p>
 </footer>
-
 </html>
